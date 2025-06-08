@@ -63,7 +63,7 @@ cd [R_basic_excercises]
 ├── r_exercise_1.R
 ├── r_exercise_2.R
 └── data/
-    └── student_data.csv    # 学生データ（演習1で使用）
+    ├── student_data.csv    # 学生データ（演習1で使用）
     └── lifestyle_data.csv  # ライフスタイルデータ（演習2で使用）
 ```
 

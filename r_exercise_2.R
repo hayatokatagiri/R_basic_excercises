@@ -347,62 +347,6 @@ odds_ratios3 <- exp(coef(logit_model3))
 print("オッズ比:")
 print(round(odds_ratios3, 3))
 
-# 予測確率の計算例
-print("予測確率の例:")
-# 平均的な条件での予測
-new_data <- data.frame(
-  age = mean(data$age),
-  gender = "女性",
-  education = "大卒",
-  income = mean(data$income),
-  life_satisfaction = mean(data$life_satisfaction),
-  mental_health = mean(data$mental_health)
-)
-
-pred_prob_married <- predict(logit_model1, new_data, type = "response")
-print(paste("平均的な条件の女性・大卒の既婚確率:", round(pred_prob_married, 3)))
-
-pred_prob_satisfaction <- predict(logit_model2, new_data, type = "response")
-print(paste("平均的な条件の女性・大卒・既婚の生活満足度高群確率:", round(pred_prob_satisfaction, 3)))
-
-# =============================================================================
-# 8. モデルの比較と評価
-# =============================================================================
-
-print("=== 8. モデルの比較と評価 ===")
-
-# AIC による モデル比較
-print("線形回帰モデルのAIC比較:")
-print(paste("年収モデル（年齢のみ）:", round(AIC(model1), 2)))
-print(paste("年収モデル（重回帰）:", round(AIC(model4), 2)))
-print(paste("生活満足度モデル（年収のみ）:", round(AIC(model2), 2)))
-print(paste("生活満足度モデル（年齢のみ）:", round(AIC(model3), 2)))
-print(paste("生活満足度モデル（重回帰）:", round(AIC(model5), 2)))
-print(paste("精神的健康モデル（重回帰）:", round(AIC(model6), 2)))
-
-print("ロジスティック回帰モデルのAIC:")
-print(paste("既婚状況予測モデル:", round(AIC(logit_model1), 2)))
-print(paste("生活満足度高群予測モデル:", round(AIC(logit_model2), 2)))
-print(paste("精神的健康高群予測モデル:", round(AIC(logit_model3), 2)))
-
-# 予測精度の評価（ロジスティック回帰）
-predictions_married <- ifelse(predict(logit_model1, type = "response") > 0.5, 1, 0)
-accuracy_married <- mean(predictions_married == data$married)
-print(paste("既婚状況予測の正解率:", round(accuracy_married, 3)))
-
-predictions_satisfaction <- ifelse(predict(logit_model2, type = "response") > 0.5, 1, 0)
-accuracy_satisfaction <- mean(predictions_satisfaction == data$high_satisfaction)
-print(paste("生活満足度高群予測の正解率:", round(accuracy_satisfaction, 3)))
-
-# 混同行列
-print("既婚状況予測の混同行列:")
-confusion_matrix_married <- table(実際 = data$married, 予測 = predictions_married)
-print(confusion_matrix_married)
-
-print("生活満足度高群予測の混同行列:")
-confusion_matrix_satisfaction <- table(実際 = data$high_satisfaction, 予測 = predictions_satisfaction)
-print(confusion_matrix_satisfaction)
-
 # =============================================================================
 # 9. 結果の解釈とまとめ
 # =============================================================================
