@@ -4,8 +4,8 @@
 # =====================================
 
 # 図の日本語表示用
-par(family = "Meiryo") #Windows
-par(family= "HiraKakuProN-W3") #Mac
+#par(family = "Meiryo") #Windows
+#par(family= "HiraKakuProN-W3") #Mac
 
 # 1. 基本的な操作とコンソールの使い方
 # =====================================
