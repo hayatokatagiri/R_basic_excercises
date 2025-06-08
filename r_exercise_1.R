@@ -77,11 +77,12 @@ print("student_data.csvファイルを使用します（すでに用意されて
 # =====================================
 
 # CSVファイルを読み込み
-data <- read.csv("student_data.csv", fileEncoding = "UTF-8")
+data <- read.csv("./data/student_data.csv", fileEncoding = "UTF-8")
 
 # データの基本情報を確認
 print("=== データの基本情報 ===")
 print(dim(data))  # 行数と列数
+print(names(data))  # 変数名
 print(summary(data))  # 基本統計量
 
 # 5. 基本統計量の計算

@@ -26,7 +26,7 @@
 - 分散（variance）
 - 標準偏差（standard deviation）
 - 中央値（median）
-- 基本統計量の表示（summary）
+- 基本統計量の表示
 - クロス集計
 
 ### 5. データ可視化
@@ -79,9 +79,11 @@ cd [R_basic_excercises]
 ## ファイル構成
 
 ```
-├── README.md           # このファイル
-├── r_exercise_1.R       # メインの演習コード
-└── student_data.csv    # 学生データ（すでに用意済み）
+.
+├── README.md
+├── r_exercise_1.R
+└── data/
+    └── student_data.csv    # 学生データ（すでに用意済み）
 ```
 
 ## 生成されるデータについて
