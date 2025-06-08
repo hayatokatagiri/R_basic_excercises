@@ -173,6 +173,10 @@ print(major_math_mean)
 print("学部別英語平均スコア:")
 print(major_eng_mean)
 
+#日本語表示用
+par(family= "HiraKakuProN-W3") #Mac
+par(family = "Meiryo") #Windows
+
 # 学部別数学スコア棒グラフ
 barplot(major_math_mean$math_score,
         names.arg = major_math_mean$major,
