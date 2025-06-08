@@ -72,6 +72,8 @@ cd [リポジトリ名]
 # RStudioでr_exercises.Rを開いて実行
 ```
 
+またはこのページの「Code」の「Download ZIP」からダウンロード
+
 ## ファイル構成
 
 ```
