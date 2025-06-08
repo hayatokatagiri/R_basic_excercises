@@ -70,7 +70,7 @@ git clone https://github.com/hayatokatagiri/R_basic_excercises.git
 # ディレクトリに移動
 cd [リポジトリ名]
 
-# RStudioでr_exercises.Rを開いて実行
+# RStudioでr_exercise_1.Rを開いて実行
 ```
 もしくはこのページの「<>Code」の「Download ZIP」からダウンロード
 
@@ -78,7 +78,7 @@ cd [リポジトリ名]
 
 ```
 ├── README.md           # このファイル
-├── r_exercise_base.R       # メインの演習コード
+├── r_exercise_1.R       # メインの演習コード
 └── student_data.csv    # 学生データ（すでに用意済み）
 ```
 
