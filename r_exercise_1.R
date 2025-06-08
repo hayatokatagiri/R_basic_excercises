@@ -105,6 +105,9 @@ print(paste("標準偏差:", math_sd))
 math_median <- median(data$math_score)
 print(paste("中央値:", math_median))
 
+# 基本統計量の表示
+summary(data$math)
+
 print("=== 英語スコアの基本統計量 ===")
 
 # 英語スコアについても同様に計算
@@ -117,6 +120,13 @@ print(paste("平均:", eng_mean))
 print(paste("分散:", eng_var))
 print(paste("標準偏差:", eng_sd))
 print(paste("中央値:", eng_median))
+
+# 基本統計量の表示
+summary(data$eng)
+
+#クロス集計
+table(data$major, data$gender) #男女X専攻
+round(prop.table(table(data$major, data$gender), margin = 1) * 100, 1) #男女X専攻の割合
 
 # 6. グラフの作成
 # =====================================

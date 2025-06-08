@@ -26,6 +26,8 @@
 - 分散（variance）
 - 標準偏差（standard deviation）
 - 中央値（median）
+- 基本統計量の表示（summary）
+- クロス集計
 
 ### 5. データ可視化
 - ヒストグラム（histogram）
