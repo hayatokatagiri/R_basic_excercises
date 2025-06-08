@@ -71,15 +71,6 @@ cd [R_basic_excercises]
     └── lifestyle_data.csv  # ライフスタイルデータ（すでに用意済み）
 ```
 
-
-- **student_id**: 学生ID（1-100）
-- **age**: 年齢（18-25歳）
-- **gender**: 性別（男性・女性）
-- **major**: 学部（経済学部・工学部・文学部・理学部）
-- **math_score**: 数学スコア
-- **english_score**: 英語スコア
-- **study_hours**: 1日の勉強時間（0-8時間）
-
 ## 演習の進め方
 
 ### 初回実行時
