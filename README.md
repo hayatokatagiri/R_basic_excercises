@@ -49,7 +49,7 @@
 #### 2. プロジェクトの作成
 1. 「New Project」をクリック
 2. 「New Project from Git Repository」を選択
-3. このリポジトリのURL `git@github.com:hayatokatagiri/R_basic_excercises.git` を入力
+3. このリポジトリのURL `https://github.com/hayatokatagiri/R_basic_excercises.git` を入力
 4. 「OK」をクリック
 
 #### 3. 演習の実行
