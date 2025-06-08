@@ -68,7 +68,7 @@ RStudioがインストールされている場合：
 git clone https://github.com/hayatokatagiri/R_basic_excercises.git
 
 # ディレクトリに移動
-cd [リポジトリ名]
+cd [R_basic_excercises]
 
 # RStudioでr_exercise_1.Rを開いて実行
 ```
