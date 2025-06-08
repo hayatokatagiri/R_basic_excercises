@@ -49,7 +49,7 @@
 #### 2. プロジェクトの作成
 1. 「New Project」をクリック
 2. 「New Project from Git Repository」を選択
-3. このリポジトリのURL `https://github.com/[あなたのユーザー名]/[リポジトリ名]` を入力
+3. このリポジトリのURL `git@github.com:hayatokatagiri/R_basic_excercises.git` を入力
 4. 「OK」をクリック
 
 #### 3. 演習の実行
@@ -64,7 +64,7 @@ RStudioがインストールされている場合：
 
 ```bash
 # リポジトリのクローン
-git clone https://github.com/[あなたのユーザー名]/[リポジトリ名].git
+git clone git@github.com:hayatokatagiri/R_basic_excercises.git
 
 # ディレクトリに移動
 cd [リポジトリ名]
