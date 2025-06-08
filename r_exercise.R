@@ -3,6 +3,10 @@
 # RStudio Cloud対応版
 # =====================================
 
+# 図の日本語表示用
+par(family = "Meiryo") #Windows
+par(family= "HiraKakuProN-W3") #Mac
+
 # 1. 基本的な操作とコンソールの使い方
 # =====================================
 
@@ -117,18 +121,6 @@ print(paste("中央値:", eng_median))
 # 6. グラフの作成
 # =====================================
 
-# 散布図の作成
-print("=== 散布図の作成 ===")
-plot(data$math_score, data$english_score,
-     main = "数学と英語のスコア関係",
-     xlab = "数学スコア",
-     ylab = "英語スコア",
-     col = "blue",
-     pch = 16)
-
-# 回帰直線を追加
-abline(lm(english_score ~ math_score, data = data), col = "red", lwd = 2)
-
 # ヒストグラムの作成
 print("=== ヒストグラムの作成 ===")
 
@@ -158,6 +150,36 @@ abline(v = eng_mean, col = "red", lwd = 2, lty = 2)
 legend("topright", legend = paste("平均 =", round(eng_mean, 1)), 
        col = "red", lty = 2, lwd = 2)
 
+# 箱ひげ図の作成
+print("=== 箱ひげ図の作成 ===")
+
+# 数学と英語スコアの箱ひげ図を並べて表示
+boxplot(data$math_score, data$english_score,
+        names = c("数学", "英語"),
+        main = "数学と英語スコアの箱ひげ図",
+        ylab = "スコア",
+        col = c("lightblue", "lightgreen"))
+
+# 学部別数学スコアの箱ひげ図
+boxplot(math_score ~ major, data = data,
+        main = "学部別数学スコアの箱ひげ図",
+        xlab = "学部",
+        ylab = "数学スコア",
+        col = c("red", "blue", "green", "orange"),
+        las = 2)
+
+# 散布図の作成
+print("=== 散布図の作成 ===")
+plot(data$math_score, data$english_score,
+     main = "数学と英語のスコア関係",
+     xlab = "数学スコア",
+     ylab = "英語スコア",
+     col = "blue",
+     pch = 16)
+
+# 回帰直線を追加
+abline(lm(english_score ~ math_score, data = data), col = "red", lwd = 2)
+
 # 7. グループごとの棒グラフ
 # =====================================
 
@@ -172,10 +194,6 @@ print(major_math_mean)
 
 print("学部別英語平均スコア:")
 print(major_eng_mean)
-
-#日本語表示用
-par(family= "HiraKakuProN-W3") #Mac
-par(family = "Meiryo") #Windows
 
 # 学部別数学スコア棒グラフ
 barplot(major_math_mean$math_score,

@@ -28,8 +28,9 @@
 - 中央値（median）
 
 ### 5. データ可視化
-- 散布図（scatter plot）
 - ヒストグラム（histogram）
+- 箱ひげ図（box plot）
+- 散布図（scatter plot）
 - 棒グラフ（bar plot）
 - グループ別の比較グラフ
 
@@ -64,15 +65,14 @@ RStudioがインストールされている場合：
 
 ```bash
 # リポジトリのクローン
-git clone git@github.com:hayatokatagiri/R_basic_excercises.git
+git clone https://github.com/hayatokatagiri/R_basic_excercises.git
 
 # ディレクトリに移動
 cd [リポジトリ名]
 
 # RStudioでr_exercises.Rを開いて実行
 ```
-
-またはこのページの「Code」の「Download ZIP」からダウンロード
+もしくはこのページの「<>Code」の「Download ZIP」からダウンロード
 
 ## ファイル構成
 
@@ -135,8 +135,9 @@ cor(x, y)           # 相関係数
 
 ### グラフ作成
 ```r
-plot(x, y)          # 散布図
 hist(x)             # ヒストグラム
+boxplot(x)          # 箱ひげ図
+plot(x, y)          # 散布図
 barplot(x)          # 棒グラフ
 ```
 
@@ -189,4 +190,4 @@ barplot(x)          # 棒グラフ
 
 **更新日**: 2025年6月8日  
 **作成者**: Hayato KATAGIRI
-**対象**: 大学2年生 人間行動学データ解析法1a
+**対象**: 大学2年生
