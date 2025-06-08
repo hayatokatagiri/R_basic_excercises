@@ -45,13 +45,6 @@ print("=== 2. データの前処理 ===")
 data$gender <- as.factor(data$gender)
 data$education <- as.factor(data$education)
 
-# 数値変数の確認
-numeric_vars <- c("age", "income", "life_satisfaction", "mental_health")
-for(var in numeric_vars) {
-  range_info <- paste(var, "の範囲:", min(data[[var]]), "-", max(data[[var]]))
-  print(range_info)
-}
-
 # 欠損値の確認
 print("欠損値の確認:")
 print(colSums(is.na(data)))
