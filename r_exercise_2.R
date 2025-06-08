@@ -432,9 +432,7 @@ print("=== 10. 練習問題 ===")
 print("以下の分析を試してみましょう:")
 print("1. 年齢を二次項（age^2）として含む重回帰分析")
 print("2. 性別と既婚状況の交互作用項を含む年収の重回帰分析")
-print("3. ステップワイズ法による変数選択（step関数を使用）")
-print("4. 残差の正規性検定（shapiro.test関数を使用）")
-print("5. 年収を対数変換（log）して回帰分析")
+print("3. 年収を対数変換（log）して回帰分析")
 
 # 練習問題1の解答例
 print("【練習問題1の解答例】")
@@ -442,12 +440,6 @@ data$age_squared <- data$age^2
 practice_model <- lm(income ~ age + age_squared + gender + education + married, data = data)
 print(paste("二次項を含む年収モデルの調整済みR²:", round(summary(practice_model)$adj.r.squared, 3)))
 
-# 練習問題3の解答例
-print("【練習問題3の解答例】")
-full_model <- lm(income ~ age + gender + education + married + life_satisfaction + mental_health, data = data)
-step_model <- step(full_model, direction = "both", trace = FALSE)
-print("ステップワイズ法で選択された変数:")
-print(names(coef(step_model)))
 
 print("=== 演習完了 ===")
 print("お疲れ様でした！回帰分析の基礎を学習しました。")
