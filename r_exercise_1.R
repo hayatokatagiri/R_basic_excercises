@@ -14,6 +14,17 @@
 # Rをコンソールとして使う
 print("Rの基礎演習を開始します！")
 
+# コメントアウト（#で始まる行は実行されません）
+
+# 基本的な計算
+10 + 5        # 足し算
+10 - 5     # 引き算
+10 * 5  # 掛け算
+10 / 5        # 割り算
+10^2             # べき乗
+10 %% 3      # 余り
+
+
 # 変数への代入
 x <- 10
 y <- 5
@@ -24,24 +35,6 @@ x
 y
 name
 
-# 2. 四則演算
-# =====================================
-
-# 基本的な計算
-addition <- 10 + 5        # 足し算
-subtraction <- 10 - 5     # 引き算
-multiplication <- 10 * 5  # 掛け算
-division <- 10 / 5        # 割り算
-power <- 10^2             # べき乗
-remainder <- 10 %% 3      # 余り
-
-# 結果の表示
-print(paste("足し算:", addition))
-print(paste("引き算:", subtraction))
-print(paste("掛け算:", multiplication))
-print(paste("割り算:", division))
-print(paste("べき乗:", power))
-print(paste("余り:", remainder))
 
 # 3. ダミーデータの作成について
 # =====================================
