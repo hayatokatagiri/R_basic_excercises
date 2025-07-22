@@ -8,11 +8,11 @@
 #par(family = "Meiryo") #Windows
 #par(family= "HiraKakuProN-W3") #Mac
 
-# 1. 基本的な操作とコンソールの使い方
+# 基本的な操作とコンソールの使い方
 # =====================================
 
 # Rをコンソールとして使う
-print("Rの基礎演習を開始します！")
+print("Hello World!")
 
 # コメントアウト（#で始まる行は実行されません）
 
@@ -35,42 +35,9 @@ x
 y
 name
 
+x + y  # 変数同士の計算
 
-# 3. ダミーデータの作成について
-# =====================================
-
-# 注意: student_data.csvはすでにリポジトリに含まれています
-# 以下のコードは参考として残していますが、実行は不要です
-
-# 乱数シードを設定（結果を再現可能にするため）
-# set.seed(123)
-
-# 学生データを作成
-# n_students <- 100
-
-# student_data <- data.frame(
-#   student_id = 1:n_students,
-#   age = sample(18:25, n_students, replace = TRUE),
-#   gender = sample(c("男性", "女性"), n_students, replace = TRUE),
-#   major = sample(c("経済学部", "工学部", "文学部", "理学部"), n_students, replace = TRUE),
-#   math_score = round(rnorm(n_students, mean = 70, sd = 15), 1),
-#   english_score = round(rnorm(n_students, mean = 65, sd = 12), 1),
-#   study_hours = round(runif(n_students, min = 0, max = 8), 1)
-# )
-
-# データの確認
-# head(student_data)
-# str(student_data)
-
-# CSVファイルとして保存
-# write.csv(student_data, "student_data.csv", row.names = FALSE, fileEncoding = "UTF-8")
-
-print("student_data.csvファイルを使用します（すでに用意されています）")
-
-# 4. CSVファイルの読み込み
-# =====================================
-
-# CSVファイルを読み込み
+# CSVファイルの読み込み
 data <- read.csv("./data/student_data.csv", fileEncoding = "UTF-8")
 
 # データの基本情報を確認
@@ -185,7 +152,12 @@ plot(data$math_score, data$english_score,
 # 回帰直線を追加
 abline(lm(english_score ~ math_score, data = data), col = "red", lwd = 2)
 
-# 7. グループごとの棒グラフ
+# 相関係数
+cor_math_eng <- cor(data$math_score, data$english_score)
+cor_studyh_math <- cor(data$study_hours, data$math_score)
+cor_studyh_eng <- cor(data$study_hours, data$english_score)
+
+# グループごとの棒グラフ
 # =====================================
 
 print("=== グループ別分析 ===")

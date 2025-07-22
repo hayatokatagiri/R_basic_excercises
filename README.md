@@ -62,6 +62,7 @@ cd [R_basic_excercises]
 ├── README.md
 ├── r_exercise_1.R
 ├── r_exercise_2.R
+├── gen_data.R  # data/に演習用のデータを作成するスクリプト（実行する必要なし）
 └── data/
     ├── student_data.csv    # 学生データ（演習1で使用）
     └── lifestyle_data.csv  # ライフスタイルデータ（演習2で使用）
@@ -113,5 +114,5 @@ cd [R_basic_excercises]
 
 ---
 
-**更新日**: 2025年6月8日  
+**更新日**: 2025年7月22日  
 **作成者**: Hayato KATAGIRI
