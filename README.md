@@ -3,7 +3,8 @@
 ## 概要
 
 このリポジトリは、R統計解析の基礎を学習するための演習コードです。RStudio Cloudで実行することを前提としており、基本的なR操作から統計分析、データ可視化、回帰分析まで段階的に学習できます。
-（大学生向けの授業資料として作成した）
+（大学生向けの授業資料として作成）
+もちろん、デスクトップ版のRやPositronでも実行可能です。
 
 ## 資料
 pdf: https://researchmap.jp/multidatabases/multidatabase_contents/download/763488/a59c9fd7c1137834f5039948d875d0c8/40975?col_no=2&frame_id=1399909
@@ -58,6 +59,9 @@ cd [R_basic_excercises]
 # RStudioでr_exercise_1.Rを開いて実行
 ```
 もしくはこのページの「<>Code」の「Download ZIP」からダウンロード
+
+## Positronでの実行
+File > New Folder from Git...　でこのリポジトリのURL `https://github.com/hayatokatagiri/R_basic_excercises.git` を入力
 
 ## ファイル構成
 
