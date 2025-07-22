@@ -59,7 +59,7 @@ cd [R_basic_excercises]
 ```
 もしくはこのページの「<>Code」の「Download ZIP」からダウンロード
 
-## Positronでの実行
+### Positronでの実行
 File > New Folder from Git...　でこのリポジトリのURL `https://github.com/hayatokatagiri/R_basic_excercises.git` を入力してOK
 
 ## ファイル構成
