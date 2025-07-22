@@ -46,9 +46,7 @@ pdf: https://researchmap.jp/multidatabases/multidatabase_contents/download/76348
 3. 「Run」ボタンをクリック、または Ctrl+Enter / Cmd+Enter で実行
 4. 結果をConsoleパネルとPlotsパネルで確認
 
-### ローカル環境での実行（参考）
-
-RStudioがインストールされている場合：
+### ローカルのRStudioでの実行（参考）
 
 ```bash
 # リポジトリのクローン
@@ -62,7 +60,7 @@ cd [R_basic_excercises]
 もしくはこのページの「<>Code」の「Download ZIP」からダウンロード
 
 ## Positronでの実行
-File > New Folder from Git...　でこのリポジトリのURL `https://github.com/hayatokatagiri/R_basic_excercises.git` を入力
+File > New Folder from Git...　でこのリポジトリのURL `https://github.com/hayatokatagiri/R_basic_excercises.git` を入力してOK
 
 ## ファイル構成
 
