@@ -4,6 +4,9 @@
 
 このリポジトリは、大学生向けのR統計解析の基礎を学習するための演習コードです。RStudio Cloudで実行することを前提としており、基本的なR操作から統計分析、データ可視化、回帰分析まで段階的に学習できます。
 
+## 資料
+pdf: https://researchmap.jp/multidatabases/multidatabase_contents/download/763488/a59c9fd7c1137834f5039948d875d0c8/40975?col_no=2&frame_id=1399909
+
 ## 演習構成
 
 ### 1: R基礎と記述統計 (`r_exercise_1.R`)
